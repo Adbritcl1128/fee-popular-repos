@@ -2,15 +2,15 @@
   'use strict';
 
   angular.module('gh')
-  .directive('repositoryDir', repositoryDir);
+  .directive('repo', repo);
 
-  function repositoryDir() {
+  function repo() {
 
     return {
-      templateUrl: 'repos/user-repos.template.js',
+      templateUrl: 'repos/repository.template.html',
       restrict: 'E',
       scope: {
-
+        repo:'='
       }
     };
   }
