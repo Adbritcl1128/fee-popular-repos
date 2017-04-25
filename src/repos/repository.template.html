@@ -1,11 +1,26 @@
-<section class='panel'>
+<section class='panel panel default'>
   <header class='panel-heading'>
     <p>{{repo.name}}</p>
-  </header>
-  <article class='panel-body'>
-    <p>Owner{{repo.owner.login}}</p>
-    <p>Stars{{repo.stargazers_count}}<p>
-    <p>Language{{repo.language}}<p>
-    <p>Size{{repo.size}}<p>
-  </article>
-</section>
+    <p>{{repo.description}}<p>
+    </header>
+    <aside>
+      <h3 class='title'>Created on:</h3>
+      <p>{{repo.created_at | date : 'short'}}</p>
+    </aside>
+    <aside>
+      <h3 class='title'>Last modified:</h3>
+      <p>{{repo.updated_at | date : 'short'}}</p>
+    </aside>
+    <aside>
+      <h3 class='title'>Clone url:</h3>
+      <p>{{repo.clone_url}}></p>
+    </aside>
+    <aside>
+      <h3 class='title'>Repo Size:</h3>
+      <p>{{repo.size | size}}</p>
+    </aside>
+    <aside>
+      <h3 class='title'>Popularity:</h3>
+      <p>{{ repo.popularity}}</p>
+    </aside>
+  </section>
