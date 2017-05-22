@@ -1,0 +1,19 @@
+{
+  "name": "fee-popular-repos",
+  "version": "1.0.0",
+  "description": "A small app to display github repos for practice at The Iron Yard.",
+  "main": "convert.filter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adbritcl1128/fee-popular-repos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adbritcl1128/fee-popular-repos/issues"
+  },
+  "homepage": "https://github.com/Adbritcl1128/fee-popular-repos#readme"
+}
